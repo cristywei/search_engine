@@ -222,52 +222,52 @@ There are two steps:
     1. This query shows the total number of webpages loaded:
        ```
        select count(*) from metahtml;
-        count
---------
- 228488
+       count
+       --------
+        228488
        ```
 
     1. This query shows the number of webpages loaded / hour:
        ```
        select * from metahtml_rollup_insert order by insert_hour desc limit 100;
- hll_count |  url   | hostpathquery | hostpath | host  |      insert_hour       
------------+--------+---------------+----------+-------+------------------------
-         5 | 114359 |        109409 |   108667 | 77679 | 2022-05-10 23:00:00+00
-         5 | 113326 |        117583 |   115571 | 95066 | 2022-05-10 22:00:00+00
+        hll_count |  url   | hostpathquery | hostpath | host  |      insert_hour       
+       -----------+--------+---------------+----------+-------+------------------------
+                5 | 114359 |        109409 |   108667 | 77679 | 2022-05-10 23:00:00+00
+                5 | 113326 |        117583 |   115571 | 95066 | 2022-05-10 22:00:00+00
        ```
 
     1. This query shows the hostnames that you have downloaded the most webpages from:
        ```
        select * from metahtml_rollup_host2 order by hostpath desc limit 100;
          23 |            23 |       23 | com,lyricsfreak)
-  23 |            23 |       23 | com,stocktwits)
-  22 |            22 |       22 | com,cnet,japan)
-  22 |            22 |       22 | com,gizmodo,io9)
-  23 |            23 |       22 | com,ign)
-  22 |            22 |       22 | nl,docplayer)
-  22 |            22 |       22 | com,dx)
-  22 |            22 |       22 | com,bebee)
-  22 |            22 |       22 | com,marketwatch)
-  21 |            21 |       21 | org,oecd-ilibrary)
-  21 |            21 |       21 | com,debri-dv)
-  21 |            21 |       21 | com,dailycamera)
-  21 |            21 |       21 | net,csdn,blog)
-  21 |            21 |       21 | com,habername)
-  21 |            21 |       21 | com,github)
-  23 |            23 |       21 | edu,berkeley,scop)
-  21 |            21 |       21 | com,lyricsmode)
-  21 |            21 |       21 | me,myshows)
-  21 |            21 |       21 | com,buddytv)
-  20 |            20 |       20 | com,issuu)
-  20 |            20 |       20 | ru,render)
-  20 |            20 |       20 | com,freelancer,vn)
-  20 |            20 |       20 | com,mobygames)
-  20 |            20 |       20 | fr,softpicks)
-  25 |            25 |       20 | com,realadventures)
-  20 |            20 |       20 | com,modelmayhem)
-  20 |            20 |       20 | ru,gameguru)
-  20 |            20 |       20 | com,naruto-arena)
-  20 |            20 |       20 | org,collegesinpa)
+         23 |            23 |       23 | com,stocktwits)
+         22 |            22 |       22 | com,cnet,japan)
+         22 |            22 |       22 | com,gizmodo,io9)
+         23 |            23 |       22 | com,ign)
+         22 |            22 |       22 | nl,docplayer)
+         22 |            22 |       22 | com,dx)
+         22 |            22 |       22 | com,bebee)
+         22 |            22 |       22 | com,marketwatch)
+         21 |            21 |       21 | org,oecd-ilibrary)
+         21 |            21 |       21 | com,debri-dv)
+         21 |            21 |       21 | com,dailycamera)
+         21 |            21 |       21 | net,csdn,blog)
+         21 |            21 |       21 | com,habername)
+         21 |            21 |       21 | com,github)
+         23 |            23 |       21 | edu,berkeley,scop)
+         21 |            21 |       21 | com,lyricsmode)
+         21 |            21 |       21 | me,myshows)
+         21 |            21 |       21 | com,buddytv)
+         20 |            20 |       20 | com,issuu)
+         20 |            20 |       20 | ru,render)
+         20 |            20 |       20 | com,freelancer,vn)
+         20 |            20 |       20 | com,mobygames)
+         20 |            20 |       20 | fr,softpicks)
+         25 |            25 |       20 | com,realadventures)
+         20 |            20 |       20 | com,modelmayhem)
+         20 |            20 |       20 | ru,gameguru)
+         20 |            20 |       20 | com,naruto-arena)
+         20 |            20 |       20 | org,collegesinpa)
        ```
 
 1. Take a screenshot of an interesting search result.
