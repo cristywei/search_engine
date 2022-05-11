@@ -239,7 +239,7 @@ There are two steps:
     1. This query shows the hostnames that you have downloaded the most webpages from:
 ```
        select * from metahtml_rollup_host2 order by hostpath desc limit 100;
-         url | hostpathquery | hostpath |            host            
+ url | hostpathquery | hostpath |            host            
 -----+---------------+----------+----------------------------
  145 |           145 |      145 | com,smugmug,photos)
  101 |           101 |      101 | com,qq,yunqi)
